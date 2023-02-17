@@ -12,8 +12,8 @@ const Portfolio = () => {
                 <a href='https://hackathon-indol.vercel.app/' className='' target={'_blank'}> <img src='https://cdn.britannica.com/89/140889-050-EC3F00BF/Ripening-heads-rice-Oryza-sativa.jpg' className='rounded-2xl drop-shadow-md' alt="" height='100%' width='100%'/></a>
                 <a href='https://github.com/fairfield-programming'  target={'_blank'}> <img src='https://github.com/fairfield-programming/.github/raw/main/spread.png?raw=true' className='rounded-2xl drop-shadow-md' alt="" height='100%' width='100%'/></a>
                 <a href='https://pandeyprashant123-coder.github.io/ACES-PAGE.github.io/'  target={'_blank'}> <img src='https://github.com/pandeyprashant123-coder/ACES-PAGE.github.io/blob/main/Images/web%20design%20compition.jpg?raw=true' className='rounded-2xl drop-shadow-md' alt="" height='100%' width='100%'/></a>
-                <a href='' target={'_blank'}> <img src={Kosthetic} className='rounded-2xl drop-shadow-md' alt="" height='100%' width='100%'/></a>
-                <a href='' target={'_blank'}> <img src={Kosthetic} className='rounded-2xl drop-shadow-md' alt="" height='100%' width='100%'/></a>
+                <a href='https://social-site-ddb414.netlify.app/' target={'_blank'}> <img src={Kosthetic} className='rounded-2xl drop-shadow-md' alt="" height='100%' width='100%'/></a>
+                <a href='' target={'_blank'}> <img src="" className='rounded-2xl drop-shadow-md' alt="" height='100%' width='100%'/></a>
                 <a href='' target={'_blank'}> <img src={Kosthetic} className='rounded-2xl drop-shadow-md' alt="" height='100%' width='100%'/></a>
                 <a href='' target={'_blank'}> <img src={Kosthetic} className='rounded-2xl drop-shadow-md' alt="" height='100%' width='100%'/></a>
                 <a href='' target={'_blank'}> <img src={Kosthetic} className='rounded-2xl drop-shadow-md' alt="" height='100%' width='100%'/></a>

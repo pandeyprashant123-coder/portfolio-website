@@ -1,7 +1,7 @@
 import React from "react";
 
 const Dots = ({num,colorL}) => {
-    const arr1=['white','white','white','white','white','white','white','white','white','white',]
+    const arr1=['bg-white','bg-white','bg-white','bg-white','bg-white','bg-white','bg-white','bg-white','bg-white','bg-white',]
     for (let i = 0; i < num; i++) {
         arr1[i]=colorL
     }
@@ -9,7 +9,7 @@ const Dots = ({num,colorL}) => {
     <div>
       <div className="flex flex-row gap-6">
         {arr1?.map((color) => (
-          <div className={`h-3 w-3 rounded-full bg-${color}`}></div>
+          <div className={`h-3 w-3 rounded-full ${color}`}></div>
         ))}
       </div>
     </div>
