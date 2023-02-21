@@ -22,3 +22,27 @@ img{
   height: 100%;
   width: 100%;
 }
+
+
+
+
+
+
+
+
+
+
+.cardcontent{
+  background:linear-gradient(
+  hsl(0 0% 0% /0),
+  hsl(20 0% 0%/0.3) 20%,
+  hsl(0 0% 0% /1)
+  );
+} 
+.cardcontent button{
+  background: var(--lessblue);
+  border: none;
+  border-radius: 5px;
+  padding: 0.5em;
+  font-weight: bold;
+}
