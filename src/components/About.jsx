@@ -6,10 +6,10 @@ import linkedin from "../imgs/linkedin.svg";
 const About = () => {
   return (
     <section className="bg-[#89618A]">
-      <div className="bottom-gradient flex flex-col  px-28 pb-8">
-        <h1 className="text-8xl font-medium text-white mb-11">About Me</h1>
+      <div className="bottom-gradient flex flex-col px-8 md:px-28 pb-8 py-8">
+        <h1 className="text-6xl md:text-8xl font-medium text-white mb-11">About Me</h1>
         <div className="flex flex-row justify-around">
-          <div className="w-96 text-white text-3xl font-semibold text-right border-r-2 border-[#C099E4] pr-4">
+          <div className="flex flex-col gap-4 md:gap-0 w-24 md:w-96 text-white text-xl md:text-4xl font-semibold text-right border-r-2 border-[#C099E4] pr-4">
           <h1></h1><br/><br/><br/>
                     <h1>Coding</h1><br/>
                     <h1>Listening<br/>Music</h1><br/>
@@ -17,7 +17,7 @@ const About = () => {
             <h1></h1>
             
           </div>
-          <div className="flex flex-col gap-10 text-white pl-8 pr-10 w-3/4 text-justify">
+          <div className="flex flex-col gap-10 text-xs md:text-xl text-white pl-3 md:pl-8 md:pr-10 w-3/4 md:text-justify">
             <p>
               My name is prashnta Pandey, from kathmandu,Nepal. I am current
               studying in IOE, Purwanchal campus, Dharan. I am a passionate

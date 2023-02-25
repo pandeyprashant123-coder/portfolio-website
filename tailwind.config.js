@@ -9,6 +9,9 @@ module.exports = {
         'purple-l': '#C099E4',
         'purple-lbb': '#62326A',
       },
+      height: {
+        '128': '32rem',
+      }
     },
   },
   plugins: [],
