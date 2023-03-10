@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <section className='back-split  h-[32rem] md:h-screen lg:h-screen text-center'>
       <div className='back-gradient h-[32rem] h- md:h-screen lg:h-screen px-8 md:px-12 lg:px-28 flex flex-col md:gap-0 lg:gap-0 justify-evenly  lg:grid'>
-        <div className='fixed right-8 top-6 md:right-15 md:top-8 lg:right-20 lg:top-14 '>
+        <div className='fixed right-8 top-6 md:right-15 md:top-8 lg:right-20 lg:top-14 z-20'>
           <button className='btnH ' onClick={()=>setnav(true)}><img src={hamburger} alt="" /></button>
         </div>
         <Nav nav={nav} setnav={setnav}/>
