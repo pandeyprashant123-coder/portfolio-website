@@ -30,9 +30,11 @@ const Resume = () => {
           </div>
           <div className="flex flex-col gap-10 text-white text-xs lg:text-xl pl-3 lg:pl-8 lg:pr-10 w-3/4">
             <p>
-              My name is prashnta pandey.The standard chunk of Lorem Ipsum used
-              since the 1500s is reproduced below for those interested.
+              
+
+            My portfolio showcases some of the web development projects I have completed. Each project has challenged me in different ways and has helped me to grow as a developer. I am always looking for new opportunities to learn and improve my skills.
             </p>
+            
             <div className="">
               <h1 className="text-2xl font-bold">SKILLS</h1>
               <div className="flex flex-row gap-5 py-5">
@@ -75,6 +77,9 @@ const Resume = () => {
                 </div>
               </div>
             </div>
+            <p>
+            If you are looking for a web developer who is passionate about their craft, dedicated to delivering results, and eager to learn, I would be happy to discuss a potential project with you. Please feel free to contact me if you have any questions or would like to learn more about my work.
+            </p>
           </div>
         </div>
       </div>
