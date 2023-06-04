@@ -35,7 +35,7 @@ const Portfolio = () => {
               img={'https://images.pexels.com/photos/3184435/pexels-photo-3184435.jpeg?auto=compress&cs=tinysrgb&w=600'}
               link={'https://social-site-ddb414.netlify.app/'}
               name={'social-Site'}
-              clink={'https://social-site-ddb414.netlify.app/'}
+              clink={'https://github.com/pandeyprashant123-coder/socialSite-frontend'}
               description={"It's a full stack social media app. It is made with MERN stack where we can post the status making the account. We can like the posts of one another and make friends."}
             />
           </div>
@@ -44,7 +44,7 @@ const Portfolio = () => {
               img={Kosthetic}
               link={'https://pandeyprashant123-coder.github.io/kosthetik/'}
               name={'Kosthetik'}
-              clink={'https://pandeyprashant123-coder.github.io/kosthetik/'}
+              clink={'https://github.com/pandeyprashant123-coder/kosthetik'}
               description={"It is a multipage ecommerce blog site for cosmetics made to display beauty products. Only Html and CSS is used to delelop it."}
             />
           </div>
@@ -53,7 +53,7 @@ const Portfolio = () => {
               img={'https://cdn.britannica.com/89/140889-050-EC3F00BF/Ripening-heads-rice-Oryza-sativa.jpg'}
               link={'https://hackathon-indol.vercel.app/'}
               name={'Hackathon'}
-              clink={'https://hackathon-indol.vercel.app/'}
+              clink={'https://github.com/pandeyprashant123-coder/krishi_bazar/'}
               description={"It is our hackathon project site for the farmers to by and sell the goods solving problem related to agricultural field in Nepal"}
             />
           </div>

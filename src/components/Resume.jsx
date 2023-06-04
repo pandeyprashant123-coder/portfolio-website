@@ -30,8 +30,6 @@ const Resume = () => {
           </div>
           <div className="flex flex-col gap-10 text-white text-xs lg:text-xl pl-3 lg:pl-8 lg:pr-10 w-3/4">
             <p>
-              
-
             My portfolio showcases some of the web development projects I have completed. Each project has challenged me in different ways and has helped me to grow as a developer. I am always looking for new opportunities to learn and improve my skills.
             </p>
             
@@ -39,7 +37,7 @@ const Resume = () => {
               <h1 className="text-2xl font-bold">SKILLS</h1>
               <div className="flex flex-row gap-5 py-5">
                 <div className="text-xl font-semibold flex flex-col gap-5">
-                  <Skills skill={"react"} dots={7} colorL={"bg-blue-400"} />
+                  <Skills skill={"React"} dots={7} colorL={"bg-blue-400"} />
                   <Skills skill={"NodeJS"} dots={6} colorL={"bg-green-700"} />
                   <Skills skill={"MongoDB"} dots={5} colorL={"bg-green-400"} />
                   <Skills skill={"C++"} dots={8} colorL={"bg-blue-400"} />

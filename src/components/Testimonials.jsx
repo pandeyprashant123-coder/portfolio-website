@@ -23,7 +23,7 @@ function Testimonial() {
     return ()=>clearInterval(slider)
   },[index])
   return (
-    <section className="section">
+    <section className="section bg-[#260C40]">
       <div className="title">
         <h2>
           <span>/</span>Testimonials
@@ -47,7 +47,7 @@ function Testimonial() {
               <img src={image} alt={name} className="person-img" />
               <h4>{name}</h4>
               <p className="title">{title}</p>
-              <p className="text">{quote}</p>
+              <p className="text text-[#89618A]">{quote}</p>
               <FaQuoteRight className="icon" />
             </article>
           );
