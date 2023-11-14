@@ -1,26 +1,32 @@
+"use client"
 import React from "react";
-import Kosthetic from "../imgs/bgi.jpg";
+import Image from "next/image";
+import Link from "next/link";
+
+
+import Kosthetic from "../public/imgs/bgi.jpg";
 
 const Card = ({img,link,clink,name,description}) => {
   return(
   <>
-    <img
+    <Image
       src={img}
       alt=""
       className="rounded-2xl drop-shadow-md"
+      width={30}
+      height={0}
     />
     <div className="cardcontent flex -translate-y-40 text-white rounded-2xl">
       <div className=" px-3">
         <h3 className="text-xl font-bold">{name}</h3>
         <p className="lg:pb-5">{description}</p>
-        <a href={link}><button className="bg-white text-black rounded p-1 mb-1 mr-2">Visit site</button></a>
-        <a href={clink} rel="noreferrer" target={"_blank"}><button>View code</button></a>
+        <Link href={link}><button className="bg-white text-black rounded p-1 mb-1 mr-2">Visit site</button></Link>
+        <Link href={clink} rel="noreferrer" target={"_blank"}><button>View code</button></Link>
       </div>
     </div>
   </>
 )};
 
-// "https://social-site-ddb414.netlify.app/"
 const Portfolio = () => {
   return (
     <section className="bg-[#89618A] z-0">
@@ -32,7 +38,7 @@ const Portfolio = () => {
         <div className="grid lg:grid-cols-7 gap-7 lg:gap-6 lg:my-6">
           <div className="lg:col-span-3 lg:row-span-2">
             <Card
-              img={'https://images.pexels.com/photos/3184435/pexels-photo-3184435.jpeg?auto=compress&cs=tinysrgb&w=600'}
+              img={''}
               link={'https://social-site-ddb414.netlify.app/'}
               name={'social-Site'}
               clink={'https://github.com/pandeyprashant123-coder/socialSite-frontend'}
@@ -42,7 +48,7 @@ const Portfolio = () => {
           <div className="lg:col-span-2">
             <Card
               img={Kosthetic}
-              link={'https://pandeyprashant123-coder.github.io/kosthetik/'}
+              link={''}
               name={'Kosthetik'}
               clink={'https://github.com/pandeyprashant123-coder/kosthetik'}
               description={"It is a multipage ecommerce blog site for cosmetics made to display beauty products. Only Html and CSS is used to delelop it."}
@@ -50,8 +56,8 @@ const Portfolio = () => {
           </div>
           <div className="lg:col-span-2">
             <Card
-              img={'https://cdn.britannica.com/89/140889-050-EC3F00BF/Ripening-heads-rice-Oryza-sativa.jpg'}
-              link={'https://hackathon-indol.vercel.app/'}
+              img={''}
+              link={''}
               name={'Hackathon'}
               clink={'https://github.com/pandeyprashant123-coder/krishi_bazar/'}
               description={"It is our hackathon project site for the farmers to by and sell the goods solving problem related to agricultural field in Nepal"}
@@ -59,7 +65,7 @@ const Portfolio = () => {
           </div>
           <div className="lg:col-span-4">
             <Card
-              img={'https://github.com/fairfield-programming/.github/raw/main/spread.png?raw=true'}
+              img={''}
               link={'https://github.com/fairfield-programming'}
               name={'Opensource'}
               clink={'https://github.com/fairfield-programming'}

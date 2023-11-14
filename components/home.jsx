@@ -1,7 +1,10 @@
+"use client"
 import React, { useState } from 'react'
+import Image from 'next/image'
+import Link from 'next/link'
 
-import Poster from '../imgs/hacker.svg'
-import hamburger from '../imgs/hamburger.svg'
+import Poster from '../public/imgs/hacker.svg'
+import hamburger from '../public/imgs/hamburger.svg'
 import Nav from './Nav'
 
 
@@ -11,7 +14,7 @@ const Home = () => {
     <section className='back-split  h-[32rem] md:h-screen lg:h-screen text-center'>
       <div className='back-gradient h-[32rem] h- md:h-screen lg:h-screen px-8 md:px-12 lg:px-28 flex flex-col md:gap-0 lg:gap-0 justify-evenly  lg:grid'>
         <div className='fixed right-8 top-6 md:right-15 md:top-8 lg:right-20 lg:top-14 z-20'>
-          <button className='btnH ' onClick={()=>setnav(true)}><img src={hamburger} alt="" /></button>
+          <button className='btnH ' onClick={()=>setnav(true)}><Image src={hamburger} alt="" width={25} height={0}/></button>
         </div>
         <Nav nav={nav} setnav={setnav}/>
         <div className="grid grid-cols-2 lg:grid-cols-3 justify-center items-center gap-10 lg:gap-0">
@@ -19,7 +22,7 @@ const Home = () => {
             <h2 className='lg:text-3xl md:text-3xl text-[#89618A] z-10 text-2xl'>Web Developer</h2>
             <h1 className='lg:text-5xl md:text-5xl font-bold text-white text-3xl'>Prashnta Pandey</h1>
           </div>
-          <img src={Poster} alt="poster" className=' scale-125 relative' />
+          <Image src={Poster} alt="poster" className=' scale-125 relative' height={200} width={200} />
           <div className='text-white text-left text-sm md:text-xl'>
             <p>
             Hi, there I am a web developer loves to design websites . I love coding and experiment with it..

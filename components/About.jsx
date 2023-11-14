@@ -1,7 +1,10 @@
+"use client"
 import React from "react";
-import facebook from "../imgs/facebook.svg";
-import twitter from "../imgs/twitter.svg";
-import linkedin from "../imgs/linkedin.svg";
+import Image from "next/image";
+
+import facebook from "../public/imgs/facebook.svg";
+import twitter from "../public/imgs/twitter.svg";
+import linkedin from "../public/imgs/linkedin.svg";
 
 const About = () => {
   return (
@@ -36,16 +39,16 @@ const About = () => {
                   href="https://www.facebook.com/profile.php?id=100007166771427"
                   target="_blank"
                 >
-                  <img src={facebook} alt="" />
+                  <Image src={facebook} alt="" height={0} width={30} />
                 </a>
                 <a
                   href="https://www.linkedin.com/in/prashnta-pandey-2b91211a3/"
                   target="_blank"
                 >
-                  <img src={twitter} alt="" />
+                  <Image src={twitter} alt="" height={0} width={30}/>
                 </a>
                 <a href="https://twitter.com/PrashntaPandey" target="_blank">
-                  <img src={linkedin} alt="" />
+                  <Image src={linkedin} alt="" height={0} width={30}/>
                 </a>
               </div>
             </div>

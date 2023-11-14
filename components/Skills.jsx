@@ -1,3 +1,4 @@
+"use client"
 import React from "react";
 
 const Skills = ({dots,colorL,skill}) => {
@@ -10,7 +11,7 @@ const Skills = ({dots,colorL,skill}) => {
       <h1>{skill}</h1>
       <div className="flex flex-row gap-2 lg:gap-6">
         {arr1?.map((color) => (
-          <div className={`h-2 w-2 lg:h-3 lg:w-3 rounded-full ${color}`}></div>
+          <div className={`h-2 w-2 lg:h-3 lg:w-3 rounded-full ${color}`} key={color}></div>
         ))}
       </div>
     </div>
