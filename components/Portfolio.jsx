@@ -48,7 +48,7 @@ const Portfolio = () => {
           <div className="lg:col-span-2">
             <Card
               img={Kosthetic}
-              link={''}
+              link={'https://images.pexels.com/photos/3184435/pexels-photo-3184435.jpeg?auto=compress&cs=tinysrgb&w=600'}
               name={'Kosthetik'}
               clink={'https://github.com/pandeyprashant123-coder/kosthetik'}
               description={"It is a multipage ecommerce blog site for cosmetics made to display beauty products. Only Html and CSS is used to delelop it."}
@@ -57,7 +57,7 @@ const Portfolio = () => {
           <div className="lg:col-span-2">
             <Card
               img={''}
-              link={''}
+              link={'https://pandeyprashant123-coder.github.io/kosthetik/'}
               name={'Hackathon'}
               clink={'https://github.com/pandeyprashant123-coder/krishi_bazar/'}
               description={"It is our hackathon project site for the farmers to by and sell the goods solving problem related to agricultural field in Nepal"}
