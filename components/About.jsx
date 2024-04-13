@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React from "react";
 import Image from "next/image";
 
@@ -10,27 +10,37 @@ const About = () => {
   return (
     <section className="bg-[#89618A]">
       <div className="bottom-gradient flex flex-col px-8 md:px-28 pb-8 py-8">
-        <h1 className="text-6xl md:text-8xl font-medium text-white mb-11">About Me</h1>
-        <div className="flex flex-row justify-around">
-          <div className="flex flex-col gap-4 md:gap-0 w-24 md:w-96 text-white text-xl md:text-4xl font-semibold text-right border-r-2 border-[#C099E4] pr-4">
-          <h1></h1><br/><br/><br/>
-                    <h1>Coding</h1><br/><br/><br/>
-                    <h1>Listening<br/>Music</h1><br/><br/><br/>
-                    <h1>Cooking</h1>
-            <h1></h1>
-            
-          </div>
-          <div className="flex flex-col gap-10 text-xs md:text-xl text-white pl-3 md:pl-8 md:pr-10 w-3/4 md:text-justify">
+        <h1 className="text-6xl md:text-8xl font-medium text-white mb-11">
+          About Me
+        </h1>
+        <div className="flex flex-row justify-around gap-10">
+          <div className="flex flex-col gap-10 text-xs md:text-xl text-white md:text-justify">
             <p>
               My name is prashnta Pandey, from kathmandu,Nepal. I am current
               studying in IOE, Purwanchal campus, Dharan. I am a passionate
               software Developer who wants to learn a new thing everyday.
             </p>
             <p>
-            As a web developer, I am passionate about creating engaging and user-friendly websites that meet the needs of my clients. I have honed my skills through various projects and have received recognition for my work, including several awards in hackathons during my time in college.
-            Throughout my academic career, I have worked on various web development projects, allowing me to gain extensive experience in programming languages such as HTML, CSS, and JavaScript. These projects have given me the opportunity to develop my problem-solving and analytical skills, which are essential for developing effective and efficient websites.
+              I'm a driven and adaptable professional with a diverse background
+              in computer engineering and a passion for leveraging technology to
+              drive positive change. With expertise spanning front-end and
+              back-end development, data science, and machine learning, I bring
+              a unique blend of technical skills and creative thinking to every
+              project.
             </p>
-            <p>Although I have yet to have any professional experience, I am eager to put my skills to work and am confident that I can provide clients with high-quality web development services. I am excited about the prospect of collaborating with others to develop innovative and dynamic websites that meet their unique needs.
+            <p>
+              My journey in the realm of technology began with a Bachelor's in
+              Computer Engineering from Tribhuvan University, IOE, Purwanchal
+              Campus, where I'm currently pursuing my degree with an expected
+              completion in 2025. Along the way, I've had the honor of receiving
+              accolades such as winning hackathons and securing top positions
+              for projects that merge innovation with social impact. From
+              building mobile apps for medicine detection to creating e-commerce
+              platforms for farmers and designing AI-integrated websites for the
+              visually impaired, I thrive on challenging the status quo and
+              pushing the boundaries of what's possible. My commitment to
+              excellence and results-driven approach has earned me recognition
+              as a top performer in my field.
             </p>
             <div className="text-xl">
               Follow Me..
@@ -45,14 +55,21 @@ const About = () => {
                   href="https://www.linkedin.com/in/prashnta-pandey-2b91211a3/"
                   target="_blank"
                 >
-                  <Image src={twitter} alt="" height={0} width={30}/>
+                  <Image src={twitter} alt="" height={0} width={30} />
                 </a>
                 <a href="https://twitter.com/PrashntaPandey" target="_blank">
-                  <Image src={linkedin} alt="" height={0} width={30}/>
+                  <Image src={linkedin} alt="" height={0} width={30} />
                 </a>
               </div>
             </div>
           </div>
+          <Image
+            src="/imgs/Prashnta.png"
+            alt=""
+            height={300}
+            width={300}
+            className="rounded-full"
+          />
         </div>
       </div>
     </section>
