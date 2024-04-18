@@ -28,8 +28,9 @@ const Home = () => {
               Prashnta Pandey
             </h1>
             <h2 className="lg:text-xl md:text-xl text-[#89618A] z-10 text-xl mt-2">
-              Undergrad CS Engineering Student · Full Stack · ML & Data
-              Enthusiast · Tech
+              {
+                "Undergrad CS Engineering Student · Full Stack · ML & Data Enthusiast · Tech"
+              }
             </h2>
 
             <div className="flex gap-6 mt-4 z-10 relative text-white">
@@ -56,8 +57,9 @@ const Home = () => {
           />
           <div className="text-white text-left text-sm md:text-xl">
             <p>
-              I'm an full-stack developer and aspiring ML/AI enthusiast creating
-              my own version of the digital world one step at a time. IOE,ERC.
+              {
+                "I'm an full-stack developer and aspiring ML/AI enthusiast creating my own version of the digital world one step at a time. IOE,ERC."
+              }
             </p>
           </div>
         </div>
