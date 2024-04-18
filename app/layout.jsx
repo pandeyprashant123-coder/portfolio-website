@@ -1,22 +1,23 @@
-import './globals.css'
-import { Children } from 'react'
-
+import "./globals.css";
+import { Children } from "react";
 
 export const metadata = {
-    title: "Prashnta Pandey",
-    description: ""
-}
+  title: "Prashnta Pandey",
+  description: "",
+};
 
-const rootLayout = ({children}) => {
+const rootLayout = ({ children }) => {
   return (
-    <html lang='en'>
-        <body suppressHydrationWarning={true}>
-            <main>
-                {children}
-            </main>
-        </body>
+    <html lang="en">
+      <meta
+        name="google-site-verification"
+        content="vkXfb4Q-cDjRR-pE3Uv_AjtFM0TrrvA4MEV4bAwBom0"
+      />
+      <body suppressHydrationWarning={true}>
+        <main>{children}</main>
+      </body>
     </html>
-  )
-}
+  );
+};
 
-export default rootLayout
+export default rootLayout;
