@@ -1,41 +1,55 @@
-"use client"
+"use client";
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-
 import Kosthetic from "../public/imgs/bgi.jpg";
 
-const Card = ({img,link,clink,name,description}) => {
-  return(
-  <>
-    <Image
-      src={img}
-      alt=""
-      className="rounded-2xl drop-shadow-md"
-      width={30}
-      height={0}
-    />
-    <div className="cardcontent flex -translate-y-40 text-white rounded-2xl">
-      <div className=" px-3">
-        <h3 className="text-xl font-bold">{name}</h3>
-        <p className="lg:pb-5">{description}</p>
-        <Link href={link}><button className="bg-white text-black rounded p-1 mb-1 mr-2">Visit site</button></Link>
-        <Link href={clink} rel="noreferrer" target={"_blank"}><button>View code</button></Link>
+const Card = ({ img, link, clink, name, description }) => {
+  return (
+    <div className="flex p-10  rounded-2xl justify-between my-3 bg-[#260c4072]">
+      {img ? (
+        <Image
+          src={img}
+          alt=""
+          className="drop-shadow-md w-1/2 m-2 rounded-md"
+          width={1000}
+          height={0}
+        />
+      ) : (
+        <h1 className="flex text-white text-5xl font-bold text-center justify-center items-center">
+          {name}
+        </h1>
+      )}
+      <div className=" flex text-white w-1/2 p-5 items-center justify-start">
+        <div className=" px-3">
+          {img && <h3 className="text-xl font-bold">{name}</h3>}
+          <p className="lg:pb-5">{description}</p>
+          <Link href={link}>
+            <button className="bg-white text-black rounded p-1 mb-1 mr-2">
+              See demo
+            </button>
+          </Link>
+          <Link href={clink} rel="noreferrer" target={"_blank"}>
+            <button>View code</button>
+          </Link>
+        </div>
       </div>
     </div>
-  </>
-)};
+  );
+};
 
 const Portfolio = () => {
   return (
     <section className="bg-[#89618A] z-0">
       <div className="bottom-gradient flex flex-col  py-11  px-8 lg:px-28 lg:pb-8 pb-20">
-        <h1 className="text-5xl lg:text-8xl font-medium text-white mb-11">My Portfolio</h1>
+        <h1 className="text-5xl lg:text-8xl font-medium text-white mb-11">
+          My Portfolio
+        </h1>
         <h1 className="text-3xl lg:text-6xl font-medium text-white mb-11">
           My masterpiece collection
         </h1>
-        <div className="grid lg:grid-cols-7 gap-7 lg:gap-6 lg:my-6">
+        {/* <div className="grid lg:grid-cols-7 gap-7 lg:gap-6 lg:my-6">
           <div className="lg:col-span-3 lg:row-span-2">
             <Card
               img={''}
@@ -48,7 +62,7 @@ const Portfolio = () => {
           <div className="lg:col-span-2">
             <Card
               img={Kosthetic}
-              link={'https://images.pexels.com/photos/3184435/pexels-photo-3184435.jpeg?auto=compress&cs=tinysrgb&w=600'}
+              link={''}
               name={'Kosthetik'}
               clink={'https://github.com/pandeyprashant123-coder/kosthetik'}
               description={"It is a multipage ecommerce blog site for cosmetics made to display beauty products. Only Html and CSS is used to delelop it."}
@@ -73,7 +87,46 @@ const Portfolio = () => {
             />
           </div>
           
-        </div>
+        </div> */}
+        <Card
+          link={
+            "https://www.linkedin.com/posts/prashnta-pandey-2b91211a3_healthcareinnovation-medtech-empowerment-activity-7170297548606222336-GrOc?utm_source=share&utm_medium=member_desktop"
+          }
+          clink={"https://github.com/Sujan14728/MediscanPlus"}
+          name={"MediscanPlus"}
+          description={
+            "Our team has developed a cutting-edge application that leverages advanced technologies such as Optical Character Recognition (OCR) and Natural Language Processing (NLP) to provide users with quick access to information about medicines through image scanning."
+          }
+        />
+        <Card
+          img={"/imgs/banner3.png"}
+          link={"https://hackathon-indol.vercel.app/"}
+          name={"Hackathon"}
+          clink={"https://github.com/pandeyprashant123-coder/krishi_bazar/"}
+          description={
+            "It is our hackathon project site for the farmers to by and sell the goods solving problem related to agricultural field in Nepal"
+          }
+        />
+
+        <Card
+          img={Kosthetic}
+          link={""}
+          name={"Kosthetik"}
+          clink={"https://github.com/pandeyprashant123-coder/kosthetik"}
+          description={
+            "It is a multipage ecommerce blog site for cosmetics made to display beauty products. Only Html and CSS is used to delelop it."
+          }
+        />
+        <Card
+          link={"https://social-site-ddb414.netlify.app/"}
+          name={"social Networking Site"}
+          clink={
+            "https://github.com/pandeyprashant123-coder/socialSite-frontend"
+          }
+          description={
+            "It's a full stack social media app. It is made with MERN stack where we can post the status making the account. We can like the posts of one another and make friends."
+          }
+        />
       </div>
     </section>
   );

@@ -13,6 +13,7 @@ const rootLayout = ({ children }) => {
         name="google-site-verification"
         content="vkXfb4Q-cDjRR-pE3Uv_AjtFM0TrrvA4MEV4bAwBom0"
       />
+      <link rel="icon" href="./favicon.ico"></link>
       <body suppressHydrationWarning={true}>
         <main>{children}</main>
       </body>

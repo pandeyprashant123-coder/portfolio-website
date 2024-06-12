@@ -17,17 +17,12 @@ const About = () => {
           <div className="flex flex-col gap-10 text-xs md:text-xl text-white md:text-justify">
             <p>
               {
-                "My name is prashnta Pandey, from kathmandu,Nepal. I am current studying in IOE, Purwanchal campus, Dharan. I am a passionate software Developer who wants to learn a new thing everyday."
+                "My name is Prashnta Pandey, and I am from Kathmandu, Nepal. I am currently studying at IOE, Purwanchal Campus, Dharan, pursuing a degree in Computer Engineering with expected completion in 2025."
               }
             </p>
             <p>
               {
-                "I'm a driven and adaptable professional with a diverse background in computer engineering and a passion for leveraging technology to drive positive change. With expertise spanning front-end and back-end development, data science, and machine learning, I bring a unique blend of technical skills and creative thinking to every project."
-              }
-            </p>
-            <p>
-              {
-                "My journey in the realm of technology began with a Bachelor's in Computer Engineering from Tribhuvan University, IOE, Purwanchal Campus, where I'm currently pursuing my degree with an expected completion in 2025. Along the way, I've had the honor of receiving accolades such as winning hackathons and securing top positions for projects that merge innovation with social impact. From building mobile apps for medicine detection to creating e-commerce platforms for farmers and designing AI-integrated websites for the visually impaired, I thrive on challenging the status quo and pushing the boundaries of what's possible. My commitment to excellence and results-driven approach has earned me recognition as a top performer in my field."
+                "As a passionate software developer, I am dedicated to learning something new every day. I have a diverse background in front-end and back-end development, data science, and machine learning. My journey includes winning hackathons and securing top positions for innovative projects, such as medicine detection apps, e-commerce platforms for farmers, and AI-integrated websites for the visually impaired. I am committed to excellence and using technology to drive positive change."
               }
             </p>
             <div className="text-xl">

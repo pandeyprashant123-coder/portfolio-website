@@ -14,7 +14,7 @@ export default function Page() {
       <About />
       <Resume />
       <Portfolio />
-      <Testimonial />
+      {/* <Testimonial /> */}
       <Footer />
     </>
   );

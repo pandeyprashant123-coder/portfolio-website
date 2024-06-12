@@ -33,7 +33,7 @@ const Home = () => {
               }
             </h2>
 
-            <div className="flex gap-6 mt-4 z-10 relative text-white">
+            {/* <div className="flex gap-6 mt-4 z-10 relative text-white">
               <Link href="www.linkedin.com/in/prashnta-pandey-2b91211a3">
                 <FiLinkedin className="text-2xl" />
               </Link>
@@ -43,10 +43,10 @@ const Home = () => {
               <Link href="https://twitter.com/PrashntaPandey">
                 <FaXTwitter className="text-2xl" />
               </Link>
-              <Link href="">
+              <Link href="https://www.instagram.com/prashnta_pandey/">
                 <FaInstagram className="text-2xl" />
               </Link>
-            </div>
+            </div> */}
           </div>
           <Image
             src={Poster}
@@ -62,6 +62,20 @@ const Home = () => {
               }
             </p>
           </div>
+        </div>
+        <div className="flex items-center justify-center gap-10 mt-4 z-10 relative text-white">
+          <Link href="www.linkedin.com/in/prashnta-pandey-2b91211a3">
+            <FiLinkedin className="text-4xl hover:text-green-300" />
+          </Link>
+          <Link href="https://github.com/pandeyprashant123-coder">
+            <FaGithub className="text-4xl hover:text-green-300" />
+          </Link>
+          <Link href="https://twitter.com/PrashntaPandey">
+            <FaXTwitter className="text-4xl hover:text-green-300" />
+          </Link>
+          <Link href="https://www.instagram.com/prashnta_pandey/">
+            <FaInstagram className="text-4xl hover:text-green-300" />
+          </Link>
         </div>
         <div className="grid md:gap-10 gap-11 grid-cols-2 md:grid-cols-3 lg:grid-cols-3 mt-6">
           <div className="text-left">

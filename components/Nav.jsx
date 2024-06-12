@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import React from "react";
 const navAnimation = {
   transform: "translateX(0rem)",
@@ -16,10 +17,10 @@ const Nav = ({ nav, setnav }) => {
         <button onClick={() => setnav(false)}>&#10060;</button>
       </div>
       <div className="flex flex-col  gap-11 text-white text-2xl font-bold">
-        <a href="">Home</a>
-        <a href="">About</a>
-        <a href="">Blog</a>
-        <a href="">Contact</a>
+        <Link href="/">Home</Link>
+        <Link href="">About</Link>
+        <Link href="https://medium.com/@prashntapandey">Blog</Link>
+        <Link href="">Contact</Link>
       </div>
     </div>
   );

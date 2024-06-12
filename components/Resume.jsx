@@ -2,7 +2,7 @@
 import React from "react";
 import Skills from "./Skills";
 
-import { FaReact } from "react-icons/fa6";
+import { FaReact, FaNodeJs } from "react-icons/fa6";
 import { TbBrandNextjs } from "react-icons/tb";
 import { SiPython } from "react-icons/si";
 import { FaHtml5 } from "react-icons/fa";
@@ -32,35 +32,39 @@ const Resume = () => {
               <div className="flex flex-row gap-5 py-5">
                 <div className="text-xl font-semibold flex gap-10">
                   <div>
-                    <FaReact className="text-5xl" />
+                    <FaNodeJs className="text-5xl hover:text-green-300 cursor-pointer" />
+                    <p>Node.js</p>
+                  </div>
+                  <div>
+                    <FaReact className="text-5xl hover:text-green-300 cursor-pointer" />
                     <p>React</p>
                   </div>
                   <div>
-                    <TbBrandNextjs className="text-5xl" />
+                    <TbBrandNextjs className="text-5xl hover:text-green-300 cursor-pointer" />
                     <p>NextJs</p>
                   </div>
                   <div>
-                    <SiPython className="text-5xl" />
+                    <SiPython className="text-5xl hover:text-green-300 cursor-pointer" />
                     <p>Python</p>
                   </div>
                   <div>
-                    <FaHtml5 className="text-5xl" />
+                    <FaHtml5 className="text-5xl hover:text-green-300 cursor-pointer" />
                     <p>HTML</p>
                   </div>
                   <div>
-                    <FaCss3Alt className="text-5xl" />
+                    <FaCss3Alt className="text-5xl hover:text-green-300 cursor-pointer" />
                     <p>CSS</p>
                   </div>
                   <div>
-                    <SiMongodb className="text-5xl" />
+                    <SiMongodb className="text-5xl hover:text-green-300 cursor-pointer" />
                     <p>MongoDB</p>
                   </div>
                   <div>
-                    <FaNode className="text-5xl" />
+                    <FaNode className="text-5xl hover:text-green-300 cursor-pointer" />
                     <p>NodeJs</p>
                   </div>
                   <div>
-                    <FaGitAlt className="text-5xl" />
+                    <FaGitAlt className="text-5xl hover:text-green-300 cursor-pointer" />
                     <p>Git</p>
                   </div>
                 </div>
