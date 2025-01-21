@@ -30,7 +30,7 @@ const Resume = () => {
             <div className="">
               <h1 className="text-2xl font-bold">SKILLS</h1>
               <div className="flex flex-row gap-5 py-5">
-                <div className="text-xl font-semibold flex gap-10">
+                <div className="text-xl font-semibold flex flex-wrap gap-10">
                   <div>
                     <FaNodeJs className="text-5xl hover:text-green-300 cursor-pointer" />
                     <p>Node.js</p>
@@ -104,7 +104,7 @@ const Resume = () => {
                 </div>
               </div>
             </div>
-            <p className="pr-[20rem]">
+            <p className="">
               {
                 "If you are looking for a web developer who is passionate about their craft, dedicated to delivering results, and eager to learn,I would be happy to discuss a potential project with you. Please feel free to contact me if you have any questions or would like to learn more about my work."
               }

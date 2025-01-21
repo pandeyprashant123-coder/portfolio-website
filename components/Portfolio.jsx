@@ -8,12 +8,12 @@ import projects from "./projects.json";
 
 const Card = ({ img, link, clink, name, description }) => {
   return (
-    <div className="flex p-10 flex-col lg:flex-row  rounded-2xl justify-between my-3 bg-[#260c4072]">
+    <>
       {img ? (
         <Image
           src={img}
           alt=""
-          className="drop-shadow-md h-40 lg:h-80 object-cover lg:w-1/2 m-2 rounded-md"
+          className="drop-shadow-md h-40 lg:h-80 object-cover lg:w-1/2 "
           width={500}
           height={0}
         />
@@ -22,7 +22,7 @@ const Card = ({ img, link, clink, name, description }) => {
           {name}
         </h1>
       )}
-      <div className=" flex text-white lg:w-1/2 lg:p-5 items-center justify-start">
+      <div className=" flex text-white lg:w-1/2  items-center justify-start p-5 lg:p-10">
         <div className=" px-3">
           {img && <h3 className="text-xl font-bold">{name}</h3>}
           <p className="lg:pb-5">{description}</p>
@@ -44,7 +44,7 @@ const Card = ({ img, link, clink, name, description }) => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
@@ -58,18 +58,22 @@ const Portfolio = () => {
         <h1 className="text-3xl lg:text-6xl font-medium text-white mb-11">
           My masterpiece collection
         </h1>
-
-        {projects.map((project, index) => (
-          <div key={index}>
-            <Card
-              img={project.img}
-              link={project.link}
-              name={project.name}
-              clink={project.clink}
-              description={project.description}
-            />
-          </div>
-        ))}
+        <div className="flex flex-wrap gap-5">
+          {projects.map((project, index) => (
+            <div
+              key={index}
+              className="flex w-full  flex-col gap-2 lg:flex-row  rounded justify-between  bg-[#260c4072] overflow-hidden"
+            >
+              <Card
+                img={project.img}
+                link={project.link}
+                name={project.name}
+                clink={project.clink}
+                description={project.description}
+              />
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
