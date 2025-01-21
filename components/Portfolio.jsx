@@ -4,15 +4,16 @@ import Image from "next/image";
 import Link from "next/link";
 
 import Kosthetic from "../public/imgs/bgi.jpg";
+import projects from "./projects.json";
 
 const Card = ({ img, link, clink, name, description }) => {
   return (
-    <div className="flex p-10  rounded-2xl justify-between my-3 bg-[#260c4072]">
+    <div className="flex p-10 flex-col lg:flex-row  rounded-2xl justify-between my-3 bg-[#260c4072]">
       {img ? (
         <Image
           src={img}
           alt=""
-          className="drop-shadow-md w-1/2 m-2 rounded-md"
+          className="drop-shadow-md h-40 lg:h-96 object-cover lg:w-1/2 m-2 rounded-md"
           width={1000}
           height={0}
         />
@@ -21,7 +22,7 @@ const Card = ({ img, link, clink, name, description }) => {
           {name}
         </h1>
       )}
-      <div className=" flex text-white w-1/2 p-5 items-center justify-start">
+      <div className=" flex text-white lg:w-1/2 p-5 items-center justify-start">
         <div className=" px-3">
           {img && <h3 className="text-xl font-bold">{name}</h3>}
           <p className="lg:pb-5">{description}</p>
@@ -88,12 +89,25 @@ const Portfolio = () => {
           </div>
           
         </div> */}
-        <Card
+        {projects.map((project) => (
+          <Card
+            img={project.img}
+            link={project.link}
+            name={project.name}
+            clink={project.clink}
+            description={project.description}
+          />
+        ))}
+
+        {/* <Card
           link={
             "https://www.linkedin.com/posts/prashnta-pandey-2b91211a3_healthcareinnovation-medtech-empowerment-activity-7170297548606222336-GrOc?utm_source=share&utm_medium=member_desktop"
           }
           clink={"https://github.com/Sujan14728/MediscanPlus"}
           name={"MediscanPlus"}
+          img={
+            "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?q=80&w=2030&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          }
           description={
             "Our team has developed a cutting-edge application that leverages advanced technologies such as Optical Character Recognition (OCR) and Natural Language Processing (NLP) to provide users with quick access to information about medicines through image scanning."
           }
@@ -126,7 +140,7 @@ const Portfolio = () => {
           description={
             "It's a full stack social media app. It is made with MERN stack where we can post the status making the account. We can like the posts of one another and make friends."
           }
-        />
+        /> */}
       </div>
     </section>
   );

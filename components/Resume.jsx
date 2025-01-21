@@ -104,12 +104,10 @@ const Resume = () => {
                 </div>
               </div>
             </div>
-            <p>
-              If you are looking for a web developer who is passionate about
-              their craft, dedicated to delivering results, and eager to learn,
-              I would be happy to discuss a potential project with you. Please
-              feel free to contact me if you have any questions or would like to
-              learn more about my work.
+            <p className="pr-[20rem]">
+              {
+                "If you are looking for a web developer who is passionate about their craft, dedicated to delivering results, and eager to learn,I would be happy to discuss a potential project with you. Please feel free to contact me if you have any questions or would like to learn more about my work."
+              }
             </p>
           </div>
         </div>

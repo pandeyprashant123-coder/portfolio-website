@@ -15,7 +15,7 @@ const rootLayout = ({ children }) => {
       />
       <link rel="icon" href="./favicon.ico"></link>
       <body suppressHydrationWarning={true}>
-        <main>{children}</main>
+        <main className="overflow-hidden">{children}</main>
       </body>
     </html>
   );

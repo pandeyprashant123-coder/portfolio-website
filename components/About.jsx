@@ -13,7 +13,7 @@ const About = () => {
         <h1 className="text-6xl md:text-8xl font-medium text-white mb-11">
           About Me
         </h1>
-        <div className="flex flex-row justify-around gap-10">
+        <div className="flex flex-col-reverse lg:flex-row justify-around gap-10">
           <div className="flex flex-col gap-10 text-xs md:text-xl text-white md:text-justify">
             <p>
               {

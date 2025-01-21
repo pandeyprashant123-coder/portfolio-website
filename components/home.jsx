@@ -23,30 +23,15 @@ const Home = () => {
         </div>
         <Nav nav={nav} setnav={setnav} />
         <div className="grid grid-cols-2 lg:grid-cols-3 justify-center items-center gap-10 lg:gap-0">
-          <div className="text-center md:text-center lg:text-left lg:w-96 col-span-2 md:col-span-2 lg:col-span-1">
-            <h1 className="lg:text-5xl md:text-5xl font-bold text-white text-3xl">
+          <div className="text-center md:text-center lg:text-left lg:w-96 col-span-2 md:col-span-2 pt-5 lg:col-span-1">
+            <h1 className="lg:text-5xl md:text-5xl font-bold text-white text-2xl">
               Prashnta Pandey
             </h1>
-            <h2 className="lg:text-xl md:text-xl text-[#89618A] z-10 text-xl mt-2">
+            <h2 className="lg:text-xl md:text-xl text-[#89618A] z-10 mt-2">
               {
                 "Undergrad CS Engineering Student · Full Stack · ML & Data Enthusiast · Tech"
               }
             </h2>
-
-            {/* <div className="flex gap-6 mt-4 z-10 relative text-white">
-              <Link href="www.linkedin.com/in/prashnta-pandey-2b91211a3">
-                <FiLinkedin className="text-2xl" />
-              </Link>
-              <Link href="https://github.com/pandeyprashant123-coder">
-                <FaGithub className="text-2xl" />
-              </Link>
-              <Link href="https://twitter.com/PrashntaPandey">
-                <FaXTwitter className="text-2xl" />
-              </Link>
-              <Link href="https://www.instagram.com/prashnta_pandey/">
-                <FaInstagram className="text-2xl" />
-              </Link>
-            </div> */}
           </div>
           <Image
             src={Poster}
@@ -63,42 +48,38 @@ const Home = () => {
             </p>
           </div>
         </div>
-        <div className="flex items-center justify-center gap-10 mt-4 z-10 relative text-white">
+        <div className="flex items-center justify-center gap-10 pt-5 lg:mt-4 z-10 relative text-white">
           <Link href="www.linkedin.com/in/prashnta-pandey-2b91211a3">
-            <FiLinkedin className="text-4xl hover:text-green-300" />
+            <FiLinkedin className="lg:text-4xl hover:text-green-300" />
           </Link>
           <Link href="https://github.com/pandeyprashant123-coder">
-            <FaGithub className="text-4xl hover:text-green-300" />
+            <FaGithub className="lg:text-4xl hover:text-green-300" />
           </Link>
           <Link href="https://twitter.com/PrashntaPandey">
-            <FaXTwitter className="text-4xl hover:text-green-300" />
+            <FaXTwitter className="lg:text-4xl hover:text-green-300" />
           </Link>
           <Link href="https://www.instagram.com/prashnta_pandey/">
-            <FaInstagram className="text-4xl hover:text-green-300" />
+            <FaInstagram className="lg:text-4xl hover:text-green-300" />
           </Link>
         </div>
-        <div className="grid md:gap-10 gap-11 grid-cols-2 md:grid-cols-3 lg:grid-cols-3 mt-6">
+        <div className="grid md:gap-10 gap-3 grid-cols-2 md:grid-cols-3 lg:grid-cols-3 mt-6">
           <div className="text-left">
-            <h3 className="text-xl md:text-2xl lg:text-2xl text-[#C099E4]">
-              Born In
-            </h3>
-            <h4 className="text-2xl md:text-3xl lg:text-3xl font-bold text-white">
+            <h3 className="md:text-2xl lg:text-2xl text-[#C099E4]">Born In</h3>
+            <h4 className="text-xl md:text-3xl lg:text-3xl font-bold text-white">
               Kathmandu
             </h4>
           </div>
           <div className="text-right md:text-center lg:text-center">
-            <h3 className="text-xl md:text-2xl lg:text-2xl text-[#C099E4]">
+            <h3 className=" md:text-2xl lg:text-2xl text-[#C099E4]">
               Experience
             </h3>
-            <h4 className="text-2xl md:text-3xl lg:text-3xl font-bold text-white">
+            <h4 className="text-xl md:text-3xl lg:text-3xl font-bold text-white">
               3 Years
             </h4>
           </div>
           <div className="text-center md:text-right col-span-2 md:col-span-1 lg:col-span-1 lg:text-right">
-            <h3 className="text-xl md:text-2xl lg:text-2xl text-[#C099E4]">
-              Date
-            </h3>
-            <h4 className="text-2xl md:text-3xl lg:text-3xl font-bold text-white">
+            <h3 className=" md:text-2xl lg:text-2xl text-[#C099E4]">Date</h3>
+            <h4 className="text-xl md:text-3xl lg:text-3xl font-bold text-white">
               29th September, 2000
             </h4>
           </div>

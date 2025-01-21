@@ -1,0 +1,30 @@
+[
+  {
+    "name": "MediscanPlus",
+    "link": "https://www.linkedin.com/posts/prashnta-pandey-2b91211a3_healthcareinnovation-medtech-empowerment-activity-7170297548606222336-GrOc?utm_source=share&utm_medium=member_desktop",
+    "clink": "https://github.com/Sujan14728/MediscanPlus",
+    "img": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?q=80&w=2030&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "description": "Our team has developed a cutting-edge application that leverages advanced technologies such as Optical Character Recognition (OCR) and Natural Language Processing (NLP) to provide users with quick access to information about medicines through image scanning."
+  },
+  {
+    "name": "Krishi Bazar",
+    "link": "https://hackathon-indol.vercel.app/",
+    "clink": "https://github.com/pandeyprashant123-coder/krishi_bazar/",
+    "img": "https://images.unsplash.com/photo-1483871788521-4f224a86e166?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "description": "It is our hackathon project site for the farmers to by and sell the goods solving problem related to agricultural field in Nepal"
+  },
+  {
+    "name": "Kosthetik",
+    "link": "https://pandeyprashant123-coder.github.io/kosthetik/",
+    "clink": "https://github.com/pandeyprashant123-coder/kosthetik",
+    "img": "https://images.unsplash.com/photo-1573575154488-f88a60e170df?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "description": "It is a multipage ecommerce blog site for cosmetics made to display beauty products. Only Html and CSS is used to delelop it."
+  },
+  {
+    "name": "social Networking Site",
+    "link": "https://social-site-ddb414.netlify.app/",
+    "clink": "https://github.com/pandeyprashant123-coder/socialSite-frontend",
+    "img": "https://images.unsplash.com/photo-1562577309-4932fdd64cd1?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "description": "It's a full stack social media app. It is made with MERN stack where we can post the status making the account. We can like the posts of one another and make friends."
+  }
+]
