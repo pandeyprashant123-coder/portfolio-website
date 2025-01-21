@@ -50,97 +50,18 @@ const Portfolio = () => {
         <h1 className="text-3xl lg:text-6xl font-medium text-white mb-11">
           My masterpiece collection
         </h1>
-        {/* <div className="grid lg:grid-cols-7 gap-7 lg:gap-6 lg:my-6">
-          <div className="lg:col-span-3 lg:row-span-2">
+
+        {projects.map((project, index) => (
+          <div key={index}>
             <Card
-              img={''}
-              link={'https://social-site-ddb414.netlify.app/'}
-              name={'social-Site'}
-              clink={'https://github.com/pandeyprashant123-coder/socialSite-frontend'}
-              description={"It's a full stack social media app. It is made with MERN stack where we can post the status making the account. We can like the posts of one another and make friends."}
+              img={project.img}
+              link={project.link}
+              name={project.name}
+              clink={project.clink}
+              description={project.description}
             />
           </div>
-          <div className="lg:col-span-2">
-            <Card
-              img={Kosthetic}
-              link={''}
-              name={'Kosthetik'}
-              clink={'https://github.com/pandeyprashant123-coder/kosthetik'}
-              description={"It is a multipage ecommerce blog site for cosmetics made to display beauty products. Only Html and CSS is used to delelop it."}
-            />
-          </div>
-          <div className="lg:col-span-2">
-            <Card
-              img={''}
-              link={'https://pandeyprashant123-coder.github.io/kosthetik/'}
-              name={'Hackathon'}
-              clink={'https://github.com/pandeyprashant123-coder/krishi_bazar/'}
-              description={"It is our hackathon project site for the farmers to by and sell the goods solving problem related to agricultural field in Nepal"}
-            />
-          </div>
-          <div className="lg:col-span-4">
-            <Card
-              img={''}
-              link={'https://github.com/fairfield-programming'}
-              name={'Opensource'}
-              clink={'https://github.com/fairfield-programming'}
-              description={"We're on a mission to teach everyone in the world to program. Our efforts include corporate partnerships, school and university charters, digital resources, and support for the open-source ecosystem."}
-            />
-          </div>
-          
-        </div> */}
-        {projects.map((project) => (
-          <Card
-            img={project.img}
-            link={project.link}
-            name={project.name}
-            clink={project.clink}
-            description={project.description}
-          />
         ))}
-
-        {/* <Card
-          link={
-            "https://www.linkedin.com/posts/prashnta-pandey-2b91211a3_healthcareinnovation-medtech-empowerment-activity-7170297548606222336-GrOc?utm_source=share&utm_medium=member_desktop"
-          }
-          clink={"https://github.com/Sujan14728/MediscanPlus"}
-          name={"MediscanPlus"}
-          img={
-            "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?q=80&w=2030&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          }
-          description={
-            "Our team has developed a cutting-edge application that leverages advanced technologies such as Optical Character Recognition (OCR) and Natural Language Processing (NLP) to provide users with quick access to information about medicines through image scanning."
-          }
-        />
-        <Card
-          img={"/imgs/banner3.png"}
-          link={"https://hackathon-indol.vercel.app/"}
-          name={"Hackathon"}
-          clink={"https://github.com/pandeyprashant123-coder/krishi_bazar/"}
-          description={
-            "It is our hackathon project site for the farmers to by and sell the goods solving problem related to agricultural field in Nepal"
-          }
-        />
-
-        <Card
-          img={Kosthetic}
-          link={""}
-          name={"Kosthetik"}
-          clink={"https://github.com/pandeyprashant123-coder/kosthetik"}
-          description={
-            "It is a multipage ecommerce blog site for cosmetics made to display beauty products. Only Html and CSS is used to delelop it."
-          }
-        />
-        <Card
-          link={"https://social-site-ddb414.netlify.app/"}
-          name={"social Networking Site"}
-          clink={
-            "https://github.com/pandeyprashant123-coder/socialSite-frontend"
-          }
-          description={
-            "It's a full stack social media app. It is made with MERN stack where we can post the status making the account. We can like the posts of one another and make friends."
-          }
-        /> */}
       </div>
     </section>
   );
