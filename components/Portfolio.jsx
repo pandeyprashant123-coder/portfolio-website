@@ -14,7 +14,7 @@ const Card = ({ img, link, clink, name, description }) => {
           src={img}
           alt=""
           className="drop-shadow-md h-40 lg:h-96 object-cover lg:w-1/2 m-2 rounded-md"
-          width={1000}
+          width={500}
           height={0}
         />
       ) : (
@@ -26,14 +26,18 @@ const Card = ({ img, link, clink, name, description }) => {
         <div className=" px-3">
           {img && <h3 className="text-xl font-bold">{name}</h3>}
           <p className="lg:pb-5">{description}</p>
-          <Link href={link}>
-            <button className="bg-white text-black rounded p-1 mb-1 mr-2">
-              See demo
-            </button>
-          </Link>
-          <Link href={clink} rel="noreferrer" target={"_blank"}>
-            <button>View code</button>
-          </Link>
+          {link && (
+            <Link href={link}>
+              <button className="bg-white text-black rounded p-1 mb-1 mr-2">
+                See demo
+              </button>
+            </Link>
+          )}
+          {clink && (
+            <Link href={clink} rel="noreferrer" target={"_blank"}>
+              <button>View code</button>
+            </Link>
+          )}
         </div>
       </div>
     </div>
