@@ -2,80 +2,134 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-
-import Kosthetic from "../public/imgs/bgi.jpg";
+import { motion } from "framer-motion";
+import { HiExternalLink, HiCode } from "react-icons/hi";
 import projects from "./projects.json";
 
-const Card = ({ img, link, clink, name, description }) => {
+const Card = ({ img, link, clink, name, description, tech, index }) => {
   return (
-    <>
-      {img ? (
-        <Image
-          src={img}
-          alt=""
-          className="drop-shadow-md h-40 lg:h-80 object-cover lg:w-1/2 "
-          width={500}
-          height={0}
-        />
-      ) : (
-        <h1 className="flex text-white text-5xl font-bold text-center justify-center items-center">
+    <motion.div
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.5, delay: index * 0.1 }}
+      whileHover={{ y: -10 }}
+      className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden hover:bg-white/10 transition-all duration-300"
+    >
+      <div className="relative h-64 overflow-hidden">
+        {img && (
+          <>
+            <Image
+              src={img}
+              alt={name}
+              fill
+              className="object-cover group-hover:scale-110 transition-transform duration-500"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#260C40] via-transparent to-transparent opacity-60"></div>
+          </>
+        )}
+      </div>
+      
+      <div className="p-6 space-y-4">
+        <h3 className="text-2xl font-bold text-white group-hover:text-purple-400 transition-colors">
           {name}
-        </h1>
-      )}
-      <div className=" flex text-white lg:w-1/2  items-center justify-start p-5 lg:p-10">
-        <div className=" px-3">
-          {img && <h3 className="text-xl font-bold">{name}</h3>}
-          <p className="lg:pb-5">{description}</p>
-          <div className="flex gap-2 my-3 items-center">
-            {link && (
-              <Link href={link}>
-                <button className="bg-white text-black font-semibold rounded py-1 px-3  mr-2 duration-150 hover:bg-gray-100">
-                  See demo
-                </button>
-              </Link>
-            )}
-            {clink && (
-              <Link href={clink} rel="noreferrer" target={"_blank"}>
-                <button className="hover:bg-gray-200 py-1 px-3 rounded hover:text-black duration-150">
-                  View code
-                </button>
-              </Link>
-            )}
+        </h3>
+        
+        <p className="text-white/70 leading-relaxed">{description}</p>
+        
+        {tech && (
+          <div className="flex flex-wrap gap-2">
+            {tech.split(", ").map((t, i) => (
+              <span 
+                key={i} 
+                className="px-3 py-1 bg-purple-500/20 border border-purple-500/30 rounded-full text-purple-300 text-xs font-medium"
+              >
+                {t}
+              </span>
+            ))}
           </div>
+        )}
+        
+        <div className="flex gap-3 pt-2">
+          {link && (
+            <Link 
+              href={link} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full text-white font-medium hover:shadow-lg hover:shadow-purple-500/50 transition-all"
+            >
+              <HiExternalLink /> Demo
+            </Link>
+          )}
+          {clink && (
+            <Link 
+              href={clink} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 px-5 py-2.5 bg-white/10 border border-white/20 rounded-full text-white font-medium hover:bg-white/20 transition-all"
+            >
+              <HiCode /> Code
+            </Link>
+          )}
         </div>
       </div>
-    </>
+    </motion.div>
   );
 };
 
 const Portfolio = () => {
   return (
-    <section className="bg-[#89618A] z-0">
-      <div className="bottom-gradient flex flex-col  py-11  px-8 lg:px-28 lg:pb-8 pb-20">
-        <h1 className="text-5xl lg:text-8xl font-medium text-white mb-11">
-          My Portfolio
-        </h1>
-        <h1 className="text-3xl lg:text-6xl font-medium text-white mb-11">
-          My masterpiece collection
-        </h1>
-        <div className="flex flex-wrap gap-5">
+    <div className="relative w-full h-full bg-gradient-to-b from-[#260C40] to-[#1a0a2e] py-20 overflow-y-auto">
+      <div className="max-w-7xl mx-auto px-6">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="mb-12"
+        >
+          <h2 className="text-5xl md:text-6xl font-bold text-white mb-4">
+            Featured <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">Projects</span>
+          </h2>
+          <div className="w-20 h-1 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full mb-6"></div>
+          <p className="text-white/70 text-lg max-w-3xl">
+            From hackathon victories to production applications - showcasing innovative solutions 
+            in AI, web development, and social impact technologies.
+          </p>
+        </motion.div>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <div
+            <Card
               key={index}
-              className="flex w-full  flex-col gap-2 lg:flex-row  rounded justify-between  bg-[#260c4072] overflow-hidden"
-            >
-              <Card
-                img={project.img}
-                link={project.link}
-                name={project.name}
-                clink={project.clink}
-                description={project.description}
-              />
-            </div>
+              index={index}
+              img={project.img}
+              link={project.link}
+              name={project.name}
+              clink={project.clink}
+              description={project.description}
+              tech={project.tech}
+            />
           ))}
         </div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="mt-16 text-center"
+        >
+          <Link 
+            href="https://github.com/pandeyprashant123-coder" 
+            target="_blank"
+            className="inline-block px-8 py-3 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-white font-medium hover:bg-white/20 transition-all"
+          >
+            View More on GitHub →
+          </Link>
+        </motion.div>
       </div>
-    </section>
+    </div>
   );
 };
 

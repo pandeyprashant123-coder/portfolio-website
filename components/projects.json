@@ -1,43 +1,50 @@
 [
   {
-    "name": "CoTest",
+    "name": "CoTest - Static Software Testing Tool",
     "link": "https://www.linkedin.com/posts/prashnta-pandey-2b91211a3_codequality-github-automation-activity-7305078525038874627-9y3d?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAC-Jpm0BZJlnSDEWzFaAiGxin5fGhKH4CzM",
     "clink": "https://github.com/pandeyprashant123-coder/CoTest",
     "img": "https://images.unsplash.com/photo-1582224369048-e4d2d7a6ba30?q=80&w=2097&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "description": "A comphrensive code analyzing tool"
+    "description": "A comprehensive static analysis tool built with Next.js, Python, and Redis. Analyzes software code quality, identifies vulnerabilities, and integrates with CI/CD pipelines. Implements AST parsing and lexing for deep code analysis.",
+    "tech": "Next.js, JavaScript, Python, AST, CI/CD, Redis"
+  },
+  {
+    "name": "MediscanPlus - Medicine Detection App",
+    "link": "https://www.linkedin.com/posts/prashnta-pandey-2b91211a3_healthcareinnovation-medtech-empowerment-activity-7170297548606222336-GrOc?utm_source=share&utm_medium=member_desktop",
+    "clink": "https://github.com/Sujan14728/MediscanPlus",
+    "img": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?q=80&w=2030&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "description": "Innovative mobile app using OCR and NER with PyTorch to scan medicines and provide comprehensive usage and side effect information. College project with advanced ML capabilities and web scraping for real-time data.",
+    "tech": "React Native, Python, PyTorch, OCR, NER"
+  },
+  {
+    "name": "Mental Health Consultation Platform",
+    "link": "",
+    "clink": "",
+    "img": "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3",
+    "description": "First place hackathon project - A web application for mental health consultations via video and text chat. Built with React and Django, focusing on accessibility and user privacy.",
+    "tech": "React, Django, WebRTC"
+  },
+  {
+    "name": "Krishi Bazar - E-commerce for Farmers",
+    "link": "https://hackathon-indol.vercel.app/",
+    "clink": "https://github.com/pandeyprashant123-coder/krishi_bazar/",
+    "img": "https://images.unsplash.com/photo-1483871788521-4f224a86e166?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "description": "E-commerce platform empowering farmers to sell goods directly and increase income. Built with Next.js and Firebase for real-time data sync and seamless user experience.",
+    "tech": "Next.js, Firebase"
+  },
+  {
+    "name": "Learning Platform for Blind People",
+    "link": "",
+    "clink": "",
+    "img": "https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?q=80&w=2070&auto=format&fit=crop",
+    "description": "Third place hackathon winner - AI voice assistant-integrated website using AlanAI for blind people to learn and socialize. Features accessible navigation and voice-controlled interactions.",
+    "tech": "React, Django, AlanAI"
   },
   {
     "name": "Grab A Trek",
     "link": "https://graba-trek.vercel.app/",
+    "clink": "",
     "img": "https://images.unsplash.com/photo-1545652985-5edd365b12eb?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "description": "A trek booking Site for travel enthuaist"
-  },
-  {
-    "name": "MediscanPlus",
-    "link": "https://www.linkedin.com/posts/prashnta-pandey-2b91211a3_healthcareinnovation-medtech-empowerment-activity-7170297548606222336-GrOc?utm_source=share&utm_medium=member_desktop",
-    "clink": "https://github.com/Sujan14728/MediscanPlus",
-    "img": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?q=80&w=2030&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "description": "Our team has developed a cutting-edge application that leverages advanced technologies such as Optical Character Recognition (OCR) and Natural Language Processing (NLP) to provide users with quick access to information about medicines through image scanning."
-  },
-  {
-    "name": "Krishi Bazar",
-    "link": "https://hackathon-indol.vercel.app/",
-    "clink": "https://github.com/pandeyprashant123-coder/krishi_bazar/",
-    "img": "https://images.unsplash.com/photo-1483871788521-4f224a86e166?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "description": "It is our hackathon project site for the farmers to by and sell the goods solving problem related to agricultural field in Nepal"
-  },
-  {
-    "name": "Kosthetik",
-    "link": "https://pandeyprashant123-coder.github.io/kosthetik/",
-    "clink": "https://github.com/pandeyprashant123-coder/kosthetik",
-    "img": "https://images.unsplash.com/photo-1573575154488-f88a60e170df?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "description": "It is a multipage ecommerce blog site for cosmetics made to display beauty products. Only Html and CSS is used to delelop it."
-  },
-  {
-    "name": "social Networking Site",
-    "link": "https://social-site-ddb414.netlify.app/",
-    "clink": "https://github.com/pandeyprashant123-coder/socialSite-frontend",
-    "img": "https://images.unsplash.com/photo-1562577309-4932fdd64cd1?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "description": "It's a full stack social media app. It is made with MERN stack where we can post the status making the account. We can like the posts of one another and make friends."
+    "description": "Full-featured trek booking platform for travel enthusiasts. Comprehensive booking system with real-time availability and payment integration.",
+    "tech": "Next.js, MongoDB, Stripe"
   }
 ]

@@ -1,5 +1,24 @@
-body {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  scrollbar-width: none;
+}
+
+body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -11,224 +30,188 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
-
-/* slider css */
-
-
-:root {
-  /* dark shades of primary color*/
-  --clr-primary-1: hsl(21, 91%, 17%);
-  --clr-primary-2: hsl(21, 84%, 25%);
-  --clr-primary-3: #683669;
-  --clr-primary-4: hsl(21, 77%, 34%);
-  --clr-primary-5: #260C40;
-  --clr-primary-6: hsl(21, 57%, 50%);
-  --clr-primary-7: hsl(21, 65%, 59%);
-  --clr-primary-8: hsl(21, 80%, 74%);
-  --clr-primary-9: hsl(21, 94%, 87%);
-  --clr-primary-10: hsl(21, 100%, 94%);
-  /* darkest grey - used for headings */
-  --clr-grey-1: hsl(209, 61%, 16%);
-  --clr-grey-2: hsl(211, 39%, 23%);
-  --clr-grey-3: hsl(209, 34%, 30%);
-  --clr-grey-4: hsl(209, 28%, 39%);
-  /* grey used for paragraphs */
-  --clr-grey-5: hsl(210, 22%, 49%);
-  --clr-grey-6: hsl(209, 23%, 60%);
-  --clr-grey-7: hsl(211, 27%, 70%);
-  --clr-grey-8: hsl(210, 31%, 80%);
-  --clr-grey-9: hsl(212, 33%, 89%);
-  --clr-grey-10: hsl(210, 36%, 96%);
-  --clr-white: #fff;
-  --clr-red-dark: hsl(360, 67%, 44%);
-  --clr-red-light: hsl(360, 71%, 66%);
-  --clr-green-dark: hsl(125, 67%, 44%);
-  --clr-green-light: hsl(125, 71%, 66%);
-  --clr-black: #222;
-  --transition: all 0.3s linear;
-  --spacing: 0.1rem;
-  --radius: 0.25rem;
-  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-  --fixed-width: 620px;
-}
-/*
-=============== 
-Global Styles
-===============
-*/
-
-*,
-::after,
-::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-ul {
-  list-style-type: none;
-}
-a {
-  text-decoration: none;
+/* Main scroll container */
+.scroll-container {
+  height: 100vh;
+  width: 100vw;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-gutter: stable;
 }
 
-/* section */
-.section {
-  padding: 2rem;
-  margin: 0;
-}
-/*
-=============== 
-Slider
-===============
-*/
-.title {
-  text-align: center;
-  margin-bottom: 2rem;
-}
-.title h2 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 500;
-  color: white;
-  font-size: 2rem;
-}
-.title span {
-  font-size: 0.85em;
-  color: white;
-  margin-right: 1rem;
-  font-weight: 700;
-}
-.section-center {
-  margin: 0 auto;
-  margin-top: 2rem;
-  width: 80vw;
-  /* have to have a height */
-  height: 450px;
-  max-width: 800px;
-  text-align: center;
+/* Section styling */
+.scroll-section {
+  width: 100vw;
+  min-height: 100vh;
+  height: auto;
   position: relative;
   display: flex;
-  overflow: hidden;
+  flex-direction: column;
 }
-.person-img {
-  border-radius: 50%;
+
+/* Ensure sections fill properly */
+.scroll-section > * {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Custom scrollbar */
+.scroll-container::-webkit-scrollbar {
+  width: 10px;
+}
+
+.scroll-container::-webkit-scrollbar-track {
+  background: #0d0221;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #a855f7, #ec4899);
+  border-radius: 5px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #9333ea, #db2777);
+}
+
+/* Firefox scrollbar */
+.scroll-container {
+  scrollbar-width: thin;
+  scrollbar-color: #a855f7 #0d0221;
+}
+
+/* For sections that need internal scrolling */
+.scroll-section.scrollable {
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.scroll-section.scrollable::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scroll-section.scrollable::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scroll-section.scrollable::-webkit-scrollbar-thumb {
+  background: rgba(168, 85, 247, 0.5);
+  border-radius: 3px;
+}
+
+/* Prevent white spaces */
+section,
+main,
+div {
+  margin: 0;
+  padding: 0;
+}
+
+/* Custom Animations */
+@keyframes blob {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  25% {
+    transform: translate(20px, -50px) scale(1.1);
+  }
+  50% {
+    transform: translate(-20px, 20px) scale(0.9);
+  }
+  75% {
+    transform: translate(50px, 50px) scale(1.05);
+  }
+}
+
+.animate-blob {
+  animation: blob 20s infinite;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+  animation-delay: 4s;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes scaleIn {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-slideInLeft {
+  animation: slideInFromLeft 0.6s ease-out;
+}
+
+.animate-slideInRight {
+  animation: slideInFromRight 0.6s ease-out;
+}
+
+.animate-scaleIn {
+  animation: scaleIn 0.6s ease-out;
+}
+
+/* Prose Styling */
+.prose {
+  max-width: none;
+}
+
+.prose p {
   margin-bottom: 1rem;
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border: 4px solid var(--clr-grey-8);
-  box-shadow: var(--dark-shadow);
-  margin: auto;
 }
-article h4 {
-  text-transform: uppercase;
-  color: var(--clr-primary-5);
-  margin-bottom: 0.25rem;
-}
-.title {
-  text-transform: capitalize;
-  margin-bottom: 0.75rem;
-  color: white;
-}
-.text {
-  max-width: 35em;
-  margin: 0 auto;
-  margin-top: 2rem;
-  line-height: 2;
-}
-.icon {
-  font-size: 3rem;
-  margin-top: 1rem;
-  color: var(--clr-primary-5);
-  margin: auto;
-}
-.prev,
-.next {
-  position: absolute;
-  top: 200px;
-  transform: translateY(-50%);
-  background: var(--clr-grey-5);
-  color: var(--clr-white);
-  width: 1.25rem;
-  height: 1.25rem;
-  display: grid;
-  place-items: center;
-  border-color: transparent;
-  font-size: 1rem;
-  border-radius: var(--radius);
-  cursor: pointer;
-  transition: var(--transition);
-}
-.prev:hover,
-.next:hover {
-  background: var(--clr-primary-5);
-}
-.prev {
-  left: 0;
-}
-.next {
-  right: 0;
-}
-@media (min-width: 800px) {
-  .text {
-    max-width: 45em;
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+  .scroll-container {
+    scroll-behavior: smooth;
   }
-  .prev,
-  .next {
-    width: 2rem;
-    height: 2rem;
-    font-size: 1.5rem;
-  }
-}
-article {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  /* opacity: 0; */
-  transition: var(--transition);
-}
-article.activeSlide {
-  opacity: 1;
-  transform: translateX(0);
-}
-article.lastSlide {
-  transform: translateX(-100%);
-}
-article.nextSlide {
-  transform: translateX(100%);
-}
-
-
-.back-gradient {
-  background: radial-gradient(45.32% 100.32% at 0.69% 0.68%, #683669 9.69%, rgb(67 14 109 / 27%) 69.27%, rgba(90, 49, 121, 0) 99.99%);
-}
-.back-split{
-  background:linear-gradient(
-    to top,
-    #89618A 0%,
-    #89618A 50%,
-    #260C40 50%,
-    #260C40 100%
-  );
-}
-.bottom-gradient{
-  background: radial-gradient(95.4% 94.65% at 100% 100%, #554266 19.79%, rgba(114, 100, 126, 0.1) 98.43%, rgba(56, 18, 92, 0) 98.44%);
-}
-
-.animationClick{
-  transition: .5s ease-in;
-}
-
-img{
-  height: 100%;
-  width: 100%;
 }
 
