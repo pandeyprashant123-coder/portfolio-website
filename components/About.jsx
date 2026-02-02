@@ -29,7 +29,7 @@ const About = () => {
           >
             <div className="prose prose-invert">
               <p className="text-white/80 text-lg leading-relaxed">
-                My name is <span className="text-white font-semibold">Prashnta Pandey</span>, and I am from Kathmandu, Nepal. I am currently studying at IOE, Purwanchal Campus, pursuing a Bachelor's degree in Computer Engineering, expected to graduate in March 2025.
+                My name is <span className="text-white font-semibold">Prashnta Pandey</span>, and I am from Kathmandu, Nepal. I am currently studying at IOE, Purwanchal Campus, pursuing a Bachelor&apos;s degree in Computer Engineering, expected to graduate in March 2025.
               </p>
               <p className="text-white/80 text-lg leading-relaxed">
                 As a passionate software developer currently working as a trainee at <span className="text-purple-400 font-semibold">Smaitic Labs</span>, I specialize in building scalable B2B applications and AI agents. I have extensive experience with React, Spring Boot, Next.js, and modern technologies like Docker and AWS Lambda.
@@ -38,7 +38,7 @@ const About = () => {
                 My journey includes multiple hackathon victories, developing innovative solutions like medicine detection apps using OCR and NER, e-commerce platforms for farmers, and AI-integrated platforms for accessibility.
               </p>
               <p className="text-white/80 text-lg leading-relaxed">
-                I thrive on solving complex problems with data-driven approaches and delivering results through cutting-edge technology. Whether it's developing microservices architectures or implementing RAG-based AI agents, I am committed to excellence and continuous learning.
+                I thrive on solving complex problems with data-driven approaches and delivering results through cutting-edge technology. Whether it&apos;s developing microservices architectures or implementing RAG-based AI agents, I am committed to excellence and continuous learning.
               </p>
             </div>
 

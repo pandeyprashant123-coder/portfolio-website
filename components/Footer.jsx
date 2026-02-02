@@ -135,7 +135,7 @@ const Footer = () => {
             transition={{ duration: 0.5, delay: 0.3 }}
             className="space-y-4"
           >
-            <h4 className="text-xl font-bold text-white">Let's Connect</h4>
+            <h4 className="text-xl font-bold text-white">Let&apos;s Connect</h4>
             <p className="text-white/70 text-sm leading-relaxed">
               Interested in working together or discussing tech? Feel free to reach out!
             </p>

@@ -211,7 +211,7 @@ const Resume = () => {
           transition={{ duration: 0.6 }}
           className="bg-gradient-to-r from-purple-500/20 to-pink-500/20 backdrop-blur-sm border border-purple-500/30 rounded-2xl p-8 text-center"
         >
-          <h3 className="text-2xl font-bold text-white mb-4">Let's Work Together</h3>
+          <h3 className="text-2xl font-bold text-white mb-4">Let&apos;s Work Together</h3>
           <p className="text-white/80 mb-6 max-w-2xl mx-auto">
             Looking for a dedicated software developer who brings innovative solutions and delivers results? 
             I specialize in building scalable applications using modern tech stacks, from microservices to AI-powered solutions.
